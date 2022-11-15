@@ -1,0 +1,155 @@
+body {
+	height: 100vh;
+    width: 100%;
+	margin: auto;
+	background-image: url(assets/images/background.jpg);
+	background-repeat: no-repeat;
+	background-position: center; 
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+img {
+	width: 100%;
+    height: 100%;
+	object-fit: cover;
+	border-radius: 20px;
+}
+
+#intro {
+    height: 100%;
+    width: 100%;
+
+	background-image: url(assets/images/intro.jpg);
+	background-repeat: no-repeat;
+	background-position: center; 
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+#about {
+	height: auto;
+    width: auto;
+	margin: auto;
+	position: relative;
+	padding: 4%;
+	background-color: white;
+}
+
+#body {
+	padding: 5%;
+	display: grid;
+	grid-template-columns: 3fr 2fr;
+	grid-row-gap: 8vh;
+	grid-column-gap: 8vw;
+}
+
+#outro {
+	height: 12vh;
+    width: auto;
+	margin: auto;
+	position: relative;
+	background-color: white;
+}
+
+.section {
+    height: auto;
+    width: auto;
+	position: relative;
+
+	transform: translateY(150px);
+	opacity: 0;
+	transition: 0.5s all ease;
+}
+
+.section.active{
+	transform: translateY(0);
+	opacity: 1;
+}
+
+.image {
+    height: auto;
+    width: auto;
+	position: relative;
+
+	box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+	
+	transform: translateY(150px);
+	opacity: 0;
+	transition: 0.5s all ease;
+}
+
+.image.active{
+	transform: translateY(0);
+	opacity: 1;
+}
+
+#intro-main-text {
+    text-align: center;
+	font-family: 'Inter-ExtraBold';
+	font-size: 64px;
+	color: white;
+
+	backdrop-filter: brightness(60%);
+	
+	position: relative;
+	padding-top: 40vh;
+	padding-bottom: 60vh;
+	text-align: center;
+}
+
+#about-title {
+    text-align: left;
+	font-family: 'Inter-ExtraBold';
+	font-size: 36px;
+	color: black;
+	
+	margin: auto;
+	position: relative;
+}
+
+#about-text {
+    text-align: justify;
+	font-family: 'Inter-Regular';
+	font-size: 24px;
+	color: black;
+	
+	margin: auto;
+	position: relative;
+}
+
+#section-title {
+    text-align: left;
+	font-family: 'Inter-ExtraBold';
+	font-size: 36px;
+	color: white;
+	
+	margin: auto;
+	position: relative;
+}
+
+#section-text {
+    text-align: justify;
+	font-family: 'Inter-Regular';
+	font-size: 24px;
+	color: white;
+	
+	margin: auto;
+	position: relative;
+}
+
+@media screen and (max-width: 720px){
+	#body{
+	   grid-template-columns: 1fr;
+	}
+}
+
+@font-face {
+	font-family: 'Inter-Regular';
+	src: url(assets/fonts/Inter-Regular.ttf);
+}
+
+@font-face {
+	font-family: 'Inter-ExtraBold';
+	src: url(assets/fonts/Inter-ExtraBold.ttf);
+}
