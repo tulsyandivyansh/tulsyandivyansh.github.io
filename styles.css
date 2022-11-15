@@ -144,12 +144,6 @@ img {
 	}
 }
 
-@media (pointer:none), (pointer:coarse) {
-	#body {
-		grid-template-columns: 1fr;
-	}
-}
-
 @font-face {
 	font-family: 'Inter-Regular';
 	src: url(assets/fonts/Inter-Regular.ttf);
